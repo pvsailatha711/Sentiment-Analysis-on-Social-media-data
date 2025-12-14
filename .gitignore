@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.env
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# GloVe embeddings (large files - download separately)
+glove.*.txt
+glove.*.zip
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Large model files (optional - uncomment if you want to exclude)
+# ../results/models/*.h5
+# ../results/models/*.pkl
+
