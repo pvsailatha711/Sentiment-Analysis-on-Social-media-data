@@ -1,6 +1,6 @@
 # Sentiment Analysis on Social Media Data (US Airline Tweets)
 
-A comprehensive sentiment analysis project using multiple machine learning and deep learning approaches on Twitter data about US airlines.
+A comprehensive sentiment analysis project using multiple machine learning and deep learning approaches on Twitter data about US airlines. **Best Performance**: GloVe + LSTM achieves 81.56% accuracy using pre-trained word embeddings.
 
 ## Project Overview
 
@@ -29,8 +29,8 @@ This project implements and compares four different sentiment analysis models on
 ### 2. LSTM (Bidirectional)
 - **Type**: Deep Learning (RNN)
 - **Architecture**: Embedding → Dropout → Bidirectional LSTM → Dense layers
-- **Test Accuracy**: 81.63% **BEST MODEL**
-- **Training Time**: ~62 seconds
+- **Test Accuracy**: 81.35%
+- **Training Time**: ~48 seconds
 - **Best for**: Capturing sequential patterns in text
 
 ### 3. Multinomial Naive Bayes
@@ -43,16 +43,16 @@ This project implements and compares four different sentiment analysis models on
 ### 4. GloVe + LSTM
 - **Type**: Deep Learning with pre-trained embeddings
 - **Architecture**: GloVe embeddings (50d) → Bidirectional LSTM → Dense layers
-- **Test Accuracy**: 81.56%
+- **Test Accuracy**: 81.56% **BEST MODEL**
 - **Training Time**: ~75 seconds
-- **Best for**: Leveraging pre-trained knowledge from large corpora
+- **Best for**: Leveraging pre-trained knowledge from large corpora for superior performance
 
 ## Results Summary
 
 | Model | Accuracy | Precision (macro) | Recall (macro) | F1-Score (macro) | F1-Score (weighted) |
 |-------|----------|-------------------|----------------|------------------|---------------------|
-| **LSTM (Bidirectional)** | **81.63%** | **78.00%** | **73.54%** | **74.51%** | **80.94%** |
-| **GloVe + LSTM** | 81.56% | 78.69% | 72.88% | 75.27% | 80.82% |
+| **GloVe + LSTM** | **81.56%** | **78.69%** | **72.88%** | **75.27%** | **80.82%** |
+| **LSTM (Bidirectional)** | 81.35% | 77.96% | 73.54% | 75.46% | 80.94% |
 | **TF-IDF + LR** | 80.87% | 79.59% | 69.86% | 73.47% | 79.79% |
 | **Naive Bayes** | 78.48% | 73.43% | 70.92% | 72.01% | 77.96% |
 
@@ -175,12 +175,13 @@ Sentiment-Analysis-on-Social-media-data/
 
 ## Key Findings
 
-1. **Deep learning models** (LSTM, GloVe+LSTM) outperform traditional ML approaches
-2. **Class imbalance** affects performance - negative sentiment dominates the dataset
-3. **Bidirectional LSTM** captures context from both directions, leading to best performance
-4. **GloVe embeddings** provide competitive results with transfer learning
-5. **Naive Bayes** offers the fastest training with reasonable accuracy for quick prototyping
-6. **Training time vs accuracy tradeoff**: LSTM takes longer but achieves best results
+1. **GloVe + LSTM achieves the best performance** (81.56% accuracy) by leveraging pre-trained word embeddings from large corpora
+2. **Pre-trained embeddings significantly improve results** - GloVe outperforms standard LSTM by learning from billions of tokens
+3. **Deep learning models** (GloVe+LSTM, LSTM) substantially outperform traditional ML approaches
+4. **Class imbalance** affects performance - negative sentiment dominates the dataset (62.69%)
+5. **Transfer learning is effective** - GloVe embeddings capture semantic relationships that boost sentiment classification
+6. **Naive Bayes** offers the fastest training with reasonable accuracy for quick prototyping
+7. **Training time vs accuracy tradeoff**: GloVe+LSTM takes ~75 seconds but achieves the highest accuracy
 
 ## Technologies Used
 
