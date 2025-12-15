@@ -209,10 +209,6 @@ Sentiment-Analysis-on-Social-media-data/
 - Stanford NLP Group for GloVe embeddings
 - TensorFlow and scikit-learn communities
 
-## Contact
-
-For questions or feedback, please open an issue in this repository.
-
 ---
 
 **Note**: All models have been trained and evaluated on the same dataset split to ensure fair comparison. Results may vary slightly due to random initialization in deep learning models.
