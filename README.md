@@ -194,22 +194,14 @@ Sentiment-Analysis-on-Social-media-data/
 
 ## Future Improvements
 
-- [ ] Implement transformer models (BERT, RoBERTa)
-- [ ] Add cross-validation for more robust evaluation
-- [ ] Experiment with ensemble methods
-- [ ] Try different pre-trained embeddings (FastText, Word2Vec)
-- [ ] Implement attention mechanisms
-- [ ] Add model interpretability (LIME, SHAP)
-- [ ] Deploy as a web service (Flask/FastAPI)
-- [ ] Real-time tweet sentiment analysis
-
-## Authors
-
-- **Group 6** - NLP Project, Fall 2025
-
-## License
-
-This project is open source and available for educational purposes.
+- Implement transformer models (BERT, RoBERTa)
+- Add cross-validation for more robust evaluation
+- Experiment with ensemble methods
+- Try different pre-trained embeddings (FastText, Word2Vec)
+- Implement attention mechanisms
+- Add model interpretability (LIME, SHAP)
+- Deploy as a web service (Flask/FastAPI)
+- Real-time tweet sentiment analysis
 
 ## Acknowledgments
 
